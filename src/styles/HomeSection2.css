@@ -1,0 +1,29 @@
+.section2-container {
+  height: 100vh;
+  width: 100vw;
+  background: #ffffff;
+  z-index: 2;
+}
+
+.section2-container .section2-title {
+  position: relative;
+  padding-left: 15%;
+  top: 150px;
+}
+
+.section2-container .section2-title p {
+  color: #ff8e31;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+
+.section2-container .section2-title h2 {
+  font-size: 50px;
+  margin: 0px;
+  padding-right: 10px;
+  letter-spacing: 0px;
+  min-width: 200px;
+  max-width: 860px;
+  font-weight: 900;
+}
