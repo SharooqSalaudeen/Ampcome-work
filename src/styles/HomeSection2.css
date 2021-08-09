@@ -1,14 +1,18 @@
 .section2-container {
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: calc(100vh + 200px);
+  /* width: 100vw; */
   background: #ffffff;
   z-index: 2;
+  padding-left: 15%;
 }
 
 .section2-container .section2-title {
   position: relative;
-  padding-left: 15%;
-  top: 150px;
+  /* padding-left: 15%; */
+  padding-top: 130px;
 }
 
 .section2-container .section2-title p {
@@ -26,4 +30,100 @@
   min-width: 200px;
   max-width: 860px;
   font-weight: 900;
+}
+
+.testmonial-section {
+  position: relative;
+  display: grid;
+  grid-gap: 25px;
+  padding-top: 100px;
+  gap: 70px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+}
+
+@media (max-width: 769px) {
+  .testmonial-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.testmonial-section .testmonial-item {
+  display: flex;
+}
+
+.testmonial-section .testmonial-item .testmonial-image {
+  display: flex;
+  background: #ffffff;
+  margin-left: 40px;
+  padding: 10px;
+  max-width: 320px;
+  max-height: 320px;
+  box-shadow: 0px 20px 18px #00000029;
+  border-radius: 10px;
+}
+
+.testmonial-section img {
+  max-width: 320px;
+  min-width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.testmonial-section .testmonial-name {
+  display: flex;
+  bottom: 60px;
+  align-items: center;
+  position: absolute;
+  padding: 2px 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  text-transform: uppercase;
+
+  background: #ffffff;
+  border-radius: 5px;
+  width: 315px;
+  height: 70px;
+  color: #000000;
+  box-shadow: 0px 20px 18px #00000029;
+}
+
+.testmonial-section .testmonial-name p {
+  padding-left: 20px;
+}
+
+.testmonial-section .testmonial-job {
+  display: flex;
+  bottom: 0px;
+  align-items: center;
+  position: absolute;
+  padding: 0 0 20px 60px;
+  text-align: left;
+  /* padding-left: 60px; */
+}
+
+.testmonial-section .testmonial-job p {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.section2-container .side-quote {
+  position: relative;
+  padding: 60px 20px 0 0;
+  font-size: 30px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.section2-container .section2-design {
+  position: absolute;
+  bottom: 15%;
+  z-index: -2;
+}
+
+.section2-container .section2-design img {
+  max-width: 200px;
 }

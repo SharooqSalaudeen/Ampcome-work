@@ -72,7 +72,7 @@ function MainLinks({ title, description, url }) {
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <img src="\images\Path 290.svg" alt="" />
+        <img src="\images\design/Path 290.svg" alt="" />
       </a>
     </div>
   );
@@ -83,14 +83,12 @@ function GallaryGrids({ details }) {
     <div className="section1-grid-container">
       {details.map((item, idx) => {
         const { img, title } = item;
-        console.log(img, title);
+        // console.log(img, title);
         return (
-          <>
-            <div key={idx} className="grid-img-wraper">
-              <img src={`/images/grid-images/${img}`} alt={title} />
-              <span>{title}</span>
-            </div>
-          </>
+          <div key={idx} className="grid-img-wraper">
+            <img src={`/images/grid-images/${img}`} alt={title} />
+            <span>{title}</span>
+          </div>
         );
       })}
     </div>

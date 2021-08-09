@@ -14,11 +14,11 @@ export default function Header() {
           />
           <div className="search">
             <button className="menu-button">
-              <img src="\images\Group 1072.svg" alt="search button" />
+              <img src="\images\design/Group 1072.svg" alt="search button" />
             </button>
             <input type="text" placeholder="Search for coaches" />
             <button className="search-button">
-              <img src="\images\Path 3.svg" alt="search button" />
+              <img src="\images\design/Path 3.svg" alt="search button" />
             </button>
           </div>
         </div>
