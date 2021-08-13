@@ -3,7 +3,8 @@
   position: relative;
   /* height: calc(100vh - 100px); */
   height: calc(100vh);
-
+  left: 0;
+  right: 0;
   width: 100vw;
   background: #ff8e3133;
   z-index: 1;
