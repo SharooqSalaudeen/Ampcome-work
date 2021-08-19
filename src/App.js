@@ -1,20 +1,34 @@
 import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import {
+  createTheme,
+  makeStyles,
+  ThemeProvider,
+} from "@material-ui/core/styles";
+
+import theme from "./styles/MaterialUITheme";
 import Home from "./pages/Home";
-// import SignIn from "./SignIn";
-// import Test from "./Test";
+import CoachRegistration from "./pages/CoachRegistration";
 
 export default function App() {
   return (
     <div>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/coach-registration">
+              <CoachRegistration />
+            </Route>
+          </Switch>
+        </Router>
+      </ThemeProvider>
     </div>
   );
 }
