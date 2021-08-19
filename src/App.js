@@ -3,11 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import {
-  createTheme,
-  makeStyles,
-  ThemeProvider,
-} from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/core/styles";
 
 import theme from "./styles/MaterialUITheme";
 import Home from "./pages/Home";
