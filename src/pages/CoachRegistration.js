@@ -1,15 +1,17 @@
 import React from "react";
+
+import Container from "@material-ui/core/Container";
+import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
+
+import { makeStyles } from "@material-ui/core/styles";
 
 export default function CoachRegistration() {
   const classes = useStyles();
@@ -190,19 +192,6 @@ function Section() {
   );
 }
 
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="textSecondary" align="center">
-//       {"Copyright © "}
-//       <Link color="inherit" href="https://material-ui.com/">
-//         Your Website
-//       </Link>{" "}
-//       {new Date().getFullYear()}
-//       {"."}
-//     </Typography>
-//   );
-// }
-
 //---------------------Styles----------------------------------
 
 const useStyles = makeStyles((theme) => ({
@@ -219,9 +208,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   paper: {
-    // backgroundColor: "#ffffff",
-    // padding: "40px",
-    // marginTop: theme.spacing(8),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

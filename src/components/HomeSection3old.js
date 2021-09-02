@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/HomeSection3.css";
+import "../assets/styles/HomeSection3.css";
 
-export default function HomeSection3() {
+export default function HomeSection3old() {
   return (
     <div className="section3-container">
       <div className="section3-title">

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/HomeSection4.css";
+import "../assets/styles/HomeSection4.css";
 
 const chipsdata = [
   "Account & Bookkeeping",
@@ -21,7 +21,7 @@ const chipsdata = [
   "Team Management",
 ];
 
-export default function HomeSection4() {
+export default function HomeSection4old() {
   return (
     <div className="section4-container">
       <div className="section4-left">

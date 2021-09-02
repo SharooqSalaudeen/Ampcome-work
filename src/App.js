@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { ThemeProvider } from "@material-ui/core/styles";
 
-import theme from "./styles/MaterialUITheme";
+import theme from "./assets/styles/MaterialUITheme";
 import Home from "./pages/Home";
 import CoachRegistration from "./pages/CoachRegistration";
+import VideoCall from "./pages/VideoCall";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
             </Route>
             <Route path="/coach-registration">
               <CoachRegistration />
+            </Route>
+            <Route path="/videoCall">
+              <VideoCall />
             </Route>
           </Switch>
         </Router>

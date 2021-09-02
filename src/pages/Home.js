@@ -1,20 +1,29 @@
+import { Box } from "@material-ui/core";
+
 import Header from "../components/Header";
 import HomeSection1 from "../components/HomeSection1";
-import HomeSection2 from "../components/HomeSection2";
-import HomeSection3 from "../components/HomeSection3";
-import HomeSection4 from "../components/HomeSection4";
+import HomeSection1old from "../components/HomeSection1old";
+import HomeSection2old from "../components/HomeSection2old";
+import HomeSection3old from "../components/HomeSection3old";
+import HomeSection4old from "../components/HomeSection4old";
+import Footerold from "../components/Footerold";
 import Footer from "../components/Footer";
-import "../styles/App.css";
+
+import "../assets/styles/App.css";
 
 function Home() {
   return (
     <div className="container">
-      <Header />
-      <HomeSection1 />
-      <HomeSection2 />
-      <HomeSection3 />
-      <HomeSection4 />
-      <Footer />
+      {/* <Header /> */}
+      <Box pt={2}>
+        <HomeSection1 />
+        {/* <HomeSection1old /> */}
+        {/* <HomeSection2old /> */}
+        {/* <HomeSection3old /> */}
+        {/* <HomeSection4old /> */}
+        {/* <Footerold /> */}
+        <Footer />
+      </Box>
     </div>
   );
 }
